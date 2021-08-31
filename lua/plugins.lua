@@ -13,12 +13,13 @@ return require('packer').startup(function()
   use {'lewis6991/gitsigns.nvim'}                               -- Git decorations implemented purely in lua/teal.
   use {'lukas-reineke/indent-blankline.nvim'}                   -- This plugin adds indentation guides to all lines (including empty lines).
 
-  use {'ojroques/nvim-bufbar'}                                  -- A simple and very light bufferline for Neovim written in Lua.
+--  use {'ojroques/nvim-bufbar'}                                  -- A simple and very light bufferline for Neovim written in Lua.
   use {'ojroques/nvim-bufdel'}                                  -- A very small Neovim plugin to improve the deletion of buffers.
   use {'ojroques/nvim-buildme'}                                 -- A Neovim plugin to build or run a project using the built-in terminal.
   use {'ojroques/nvim-hardline'}                                -- A statusline / bufferline for Neovim written in Lua.
   use {'ojroques/vim-oscyank'}                                  -- A Vim / Neovim plugin to copy text to the system clipboard from anywhere using the ANSI OSC52 sequence.
   use {'ojroques/nvim-lspfuzzy'}
+  use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
   
   use {'tpope/vim-fugitive'}                                    -- A Git wrapper.
   use {'tpope/vim-unimpaired'}                                  -- This plugin provides several pairs of bracket maps. Reff -- https://github.com/tpope/vim-unimpaired/blob/master/doc/unimpaired.txt 
@@ -32,8 +33,12 @@ return require('packer').startup(function()
   use {'kyazdani42/nvim-tree.lua',  requires = 'kyazdani42/nvim-web-devicons' }
 
   use {'neovim/nvim-lspconfig'}                                 -- Lsp Client for nvim.
-  use {'hrsh7th/nvim-compe'}                                    -- Auto completion plugin for nvim.
   use {'kabouzeid/nvim-lspinstall'}                             -- Automatic lsp Install.
   use {'nvim-treesitter/nvim-treesitter'} --, run = ':TSUpdate'}    -- Tree-sitter is a parser generator tool and an incremental parsing library.
   use {'nvim-treesitter/nvim-treesitter-textobjects'}           -- Create your own textobjects using tree-sitter queries.
+  use {'hrsh7th/nvim-compe'}                                    -- Auto completion plugin for nvim.
+  -- Install nvim-cmp, and buffer source as a dependency
+  use { 'hrsh7th/nvim-cmp', requires = { 'hrsh7th/vim-vsnip', 'hrsh7th/cmp-buffer', }}
+  use { 'Krasjet/auto.pairs' }
+
 end)

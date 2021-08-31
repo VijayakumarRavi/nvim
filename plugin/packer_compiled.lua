@@ -69,6 +69,18 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["auto.pairs"] = {
+    loaded = true,
+    path = "/home/vijay/.local/share/nvim/site/pack/packer/start/auto.pairs"
+  },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/home/vijay/.local/share/nvim/site/pack/packer/start/bufferline.nvim"
+  },
+  ["cmp-buffer"] = {
+    loaded = true,
+    path = "/home/vijay/.local/share/nvim/site/pack/packer/start/cmp-buffer"
+  },
   fzf = {
     loaded = true,
     path = "/home/vijay/.local/share/nvim/site/pack/packer/start/fzf"
@@ -85,10 +97,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/vijay/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim"
   },
-  ["nvim-bufbar"] = {
-    loaded = true,
-    path = "/home/vijay/.local/share/nvim/site/pack/packer/start/nvim-bufbar"
-  },
   ["nvim-bufdel"] = {
     loaded = true,
     path = "/home/vijay/.local/share/nvim/site/pack/packer/start/nvim-bufdel"
@@ -96,6 +104,10 @@ _G.packer_plugins = {
   ["nvim-buildme"] = {
     loaded = true,
     path = "/home/vijay/.local/share/nvim/site/pack/packer/start/nvim-buildme"
+  },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "/home/vijay/.local/share/nvim/site/pack/packer/start/nvim-cmp"
   },
   ["nvim-compe"] = {
     loaded = true,
@@ -172,6 +184,10 @@ _G.packer_plugins = {
   ["vim-unimpaired"] = {
     loaded = true,
     path = "/home/vijay/.local/share/nvim/site/pack/packer/start/vim-unimpaired"
+  },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "/home/vijay/.local/share/nvim/site/pack/packer/start/vim-vsnip"
   }
 }
 

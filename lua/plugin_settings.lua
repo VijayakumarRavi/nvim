@@ -34,7 +34,7 @@ g['indent_blankline_buftype_exclude'] = {'terminal'}
 g['indent_blankline_filetype_exclude'] = {'fugitive', 'fzf', 'help', 'man'}
 
 -- nvim-bufbar
-require('bufbar').setup {show_bufname = 'visible', show_tabs = true, show_flags = true}
+-- require('bufbar').setup {show_bufname = 'visible', show_tabs = true, show_flags = true}
 
 -- nvim-bufdel
 require('bufdel').setup {next = 'alternate', quit = false}
