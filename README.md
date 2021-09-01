@@ -1,8 +1,16 @@
 # Nvim 
-Neovim config written in lua.
+Here's all my nvim config written in lua. I'm trying to make it minimal and easy to understand, it will evolve as my workflow evolve....
+
+## Screenshot
 ![screenshot](./screenshot.png)
 
-Here's all my nvim config I'm trying to make it minimal and easy to understand, it will evolve as my workflow evolve....
+## Installing
+
+You will need `git`
+
+Backup your old nvim config 
+
+Clone into your `~/.config` directory
 
 ## Using it
 The structure of this config is simple, inside the lua folder for the **keymaps** yo go to the config folders and edit the keys.lua file.
