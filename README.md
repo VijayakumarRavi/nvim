@@ -1,4 +1,5 @@
-# nvim
+# Nvim 
+Neovim config written in lua.
 ![screenshot](./screenshot.png)
 
 Here's all my nvim config I'm trying to make it minimal and easy to understand, it will evolve as my workflow evolve....
