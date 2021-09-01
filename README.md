@@ -12,7 +12,11 @@ Backup your old nvim config
 
 Clone into your `~/.config` directory
 
-## Using it
+```bash
+git clone https://github.com/VijayakumarRavi/nvim.git ~/.config
+```
+
+## Usage
 The structure of this config is simple, inside the lua folder for the **keymaps** yo go to the config folders and edit the keys.lua file.
 
 If you want to add a keymap you use:
