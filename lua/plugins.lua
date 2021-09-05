@@ -1,16 +1,14 @@
 local fn = vim.fn
 local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
-if fn.empty(fn.glob(install_path)) > 0 then
+if fn.empty(fn.glob(install_path)) > -1 then
   fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
-  vim.cmd 'packadd packer.nvim' 
-  vim.cmd 'PackerCompile'
-  vim.cmd 'PackerSync'
+  vim.cmd 'packadd packer.nvim'
 end
 
 vim.cmd([[
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerCompile
+    autocmd BufWritePost plugins.lua source <afile> | PackerCompile && PackerSync
   augroup end
 ]])
 
@@ -29,9 +27,9 @@ return require('packer').startup(function()
   use {'ojroques/vim-oscyank'}                                  -- A Vim / Neovim plugin to copy text to the system clipboard from anywhere using the ANSI OSC52 sequence.
   use {'ojroques/nvim-lspfuzzy'}
   use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
-  
+
   use {'tpope/vim-fugitive'}                                    -- A Git wrapper.
-  use {'tpope/vim-unimpaired'}                                  -- This plugin provides several pairs of bracket maps. Reff -- https://github.com/tpope/vim-unimpaired/blob/master/doc/unimpaired.txt 
+  use {'tpope/vim-unimpaired'}                                  -- This plugin provides several pairs of bracket maps. Reff -- https://github.com/tpope/vim-unimpaired/blob/master/doc/unimpaired.txt
   use {'nvim-telescope/telescope.nvim'}                         -- Its a highly extendable fuzzy finder over lists.
   use {'nvim-lua/plenary.nvim'}                                 -- A Lua module for asynchronous programming using coroutines {Telescope dependency}.
   use {'kyazdani42/nvim-web-devicons'}                          -- Icons for Telescope.
