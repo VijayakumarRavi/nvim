@@ -47,6 +47,7 @@ return require('packer').startup(function()
   -- Install nvim-cmp, and buffer source as a dependency
   use { 'hrsh7th/nvim-cmp', requires = { 'hrsh7th/vim-vsnip', 'hrsh7th/cmp-buffer', }}
   use { 'Krasjet/auto.pairs' }
+  use { 'glepnir/dashboard-nvim', require = 'modules.config.dashboard-nvim',  }
 
   require('packer').install()
   require('packer').compile()

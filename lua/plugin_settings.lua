@@ -30,8 +30,10 @@ require('gitsigns').setup {
 
 -- indent-blankline.nvim
 g['indent_blankline_char'] = '┊'
-g['indent_blankline_buftype_exclude'] = {'terminal'}
-g['indent_blankline_filetype_exclude'] = {'fugitive', 'fzf', 'help', 'man'}
+vim.opt.listchars = { eol = "↴",}
+g['indent-blankline_show_end_of_line'] = true
+g['indent_blankline_buftype_exclude'] = {'terminal', 'nofile', '<empty>'}
+g['indent_blankline_filetype_exclude'] = {'fugitive', 'fzf', 'help', 'man', 'dashboard'}
 
 -- nvim-bufbar
 -- require('bufbar').setup {show_bufname = 'visible', show_tabs = true, show_flags = true}
@@ -62,3 +64,5 @@ map('n', '<leader>gd', '<cmd>Gvdiffsplit<CR>')
 map('n', '<leader>gg', '<cmd>Git<CR>')
 map('n', '<leader>gl', fmt('<cmd>term git log --graph --all --format="%s"<CR><cmd>start<CR>', log))
 
+-- Dashbord
+cmd ("let g:dashboard_default_executive = 'fzf' ")
