@@ -48,6 +48,8 @@ return require('packer').startup(function()
   use { 'hrsh7th/nvim-cmp', requires = { 'hrsh7th/vim-vsnip', 'hrsh7th/cmp-buffer', }}
   use { 'Krasjet/auto.pairs' }
   use { 'glepnir/dashboard-nvim', require = 'modules.config.dashboard-nvim',  }
+  use {'dracula/vim', as = 'dracula'}
+
 
   require('packer').install()
   require('packer').compile()

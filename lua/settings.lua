@@ -44,7 +44,7 @@ opt.undodir = '/tmp'                -- Location to save the undo file
 opt.spelllang = 'en'                -- Spell cleck languages
 opt.wildmenu = true
 
-cmd 'colorscheme onedark'
+cmd 'colorscheme dracula'
 cmd 'set nohlsearch'
 --cmd 'set mouse=a'
 

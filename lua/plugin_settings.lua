@@ -65,4 +65,4 @@ map('n', '<leader>gg', '<cmd>Git<CR>')
 map('n', '<leader>gl', fmt('<cmd>term git log --graph --all --format="%s"<CR><cmd>start<CR>', log))
 
 -- Dashbord
-cmd ("let g:dashboard_default_executive = 'fzf' ")
+-- cmd ("let g:dashboard_default_executive = 'fzf' ")
