@@ -49,7 +49,7 @@ return require('packer').startup(function()
   use { 'Krasjet/auto.pairs' }
   use { 'glepnir/dashboard-nvim', require = 'modules.config.dashboard-nvim',  }
   use {'dracula/vim', as = 'dracula'}
-
+--  use {'dylanaraps/wal.vim'}    --pywal colour
 
   require('packer').install()
   require('packer').compile()

@@ -29,11 +29,11 @@ require('gitsigns').setup {
 }
 
 -- indent-blankline.nvim
-g['indent_blankline_char'] = '┊'
-vim.opt.listchars = { eol = "↴",}
-g['indent-blankline_show_end_of_line'] = true
-g['indent_blankline_buftype_exclude'] = {'terminal', 'nofile', '<empty>'}
-g['indent_blankline_filetype_exclude'] = {'fugitive', 'fzf', 'help', 'man', 'dashboard'}
+--g['indent_blankline_char'] = '┊'
+--vim.opt.listchars = { eol = "↴",}
+--g['indent-blankline_show_end_of_line'] = true
+--g['indent_blankline_buftype_exclude'] = {'terminal', 'nofile', '<empty>'}
+--g['indent_blankline_filetype_exclude'] = {'fugitive', 'fzf', 'help', 'man', 'dashboard'}
 
 -- nvim-bufbar
 -- require('bufbar').setup {show_bufname = 'visible', show_tabs = true, show_flags = true}

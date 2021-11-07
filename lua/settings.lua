@@ -34,7 +34,7 @@ opt.smartindent = true              -- Insert indents automatically
 opt.splitbelow = true               -- Put new windows below current
 opt.splitright = true               -- Put new windows right of current
 opt.tabstop = indent                -- Number of spaces tabs count for
-opt.termguicolors = true            -- True color support
+opt.termguicolors = false            -- True color support
 opt.textwidth = width               -- Maximum width of text
 opt.updatetime = 100                -- Delay before swap file is saved
 -- opt.wildmode = {'list'}  -- Command-line completion mode
@@ -44,7 +44,7 @@ opt.undodir = '/tmp'                -- Location to save the undo file
 opt.spelllang = 'en'                -- Spell cleck languages
 opt.wildmenu = true
 
-cmd 'colorscheme dracula'
+cmd 'colorscheme wal'
 cmd 'set nohlsearch'
 --cmd 'set mouse=a'
 
