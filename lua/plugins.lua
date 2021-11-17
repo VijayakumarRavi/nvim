@@ -50,6 +50,8 @@ return require('packer').startup(function()
   use { 'glepnir/dashboard-nvim', require = 'modules.config.dashboard-nvim',  }
   use {'dracula/vim', as = 'dracula'}
   use {'dylanaraps/wal.vim'}    --pywal colour
+  use {'xiyaowong/nvim-transparent'}
+  use {'morhetz/gruvbox'}
 
   -- Gitub copilot 
   use {'github/copilot.vim'}
