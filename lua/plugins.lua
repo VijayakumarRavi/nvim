@@ -51,6 +51,9 @@ return require('packer').startup(function()
   use {'dracula/vim', as = 'dracula'}
   use {'dylanaraps/wal.vim'}    --pywal colour
 
+  -- Gitub copilot 
+  use {'github/copilot.vim'}
+
   require('packer').install()
   require('packer').compile()
 end)
