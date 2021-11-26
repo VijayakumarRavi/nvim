@@ -47,7 +47,7 @@ map('v', 'K', ":m '<-2<CR>gv=gv")
 ----- Esc & Closing actions -----
 map('i', '<F1>', '<Esc>')
 map('i', '<C-c>', '<Esc>')
-map('n', '<C-c>', ':wq<CR>')
+map('n', '<C-c>', ':w<CR>')
 map('n', '<C-z>', ':wa<CR>')
 map('n', '<leader> ', ':so %<CR>')
 

@@ -54,7 +54,7 @@ require('hardline').setup {
     exclude_terminal = true,  -- don't show terminal buffers in bufferline
     show_index = true,        -- show buffer indexes (not the actual buffer numbers) in bufferline
   },
-  theme = 'gruvbox',   -- change theme
+  theme = 'dracula',   -- change theme
   sections = {         -- define sections
     {class = 'mode', item = require('hardline.parts.mode').get_item},
     {class = 'high', item = require('hardline.parts.git').get_item, hide = 100},
