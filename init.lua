@@ -21,4 +21,3 @@ require('nv-telescope')
 require('nv-tree')
 require('nv-bufferline')
 require('dashboard')
-d
