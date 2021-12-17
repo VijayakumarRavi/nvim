@@ -52,6 +52,7 @@ return require('packer').startup(function()
   use {'dylanaraps/wal.vim'}    --pywal colour
   use {'xiyaowong/nvim-transparent'}
   use {'morhetz/gruvbox'}
+  use {'AlessandroYorba/Sierra'}
 
   -- Gitub copilot 
   use {'github/copilot.vim'}
